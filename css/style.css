@@ -1,0 +1,168 @@
+
+.top{
+  height: 250px;
+  background: darkslategray;
+  
+}
+h1{
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
+  /* 350 h 200w */
+  img{
+    height: 250px;  
+    width: 150px;
+    border-radius: 20px;
+  }
+ 
+  .fig1{
+    left: 20px;
+    bottom: 50px; 
+    position: absolute;
+    color:white;
+  }
+  #fig_1{
+    left: 20px;
+    bottom: 30px; 
+    position: absolute;
+    color:white;
+  }
+  .fig2{
+    left: 20px;
+    bottom: 50px; 
+    position: absolute;
+    color:white;
+  }
+  #fig_2{
+    left: 20px;
+    bottom: 30px; 
+    position: absolute;
+    color:white;
+  }
+  .fig3{
+    left: 20px;
+    bottom: 50px; 
+    position: absolute;
+    color:white;
+  }
+  #fig_3{
+    left: 20px;
+    bottom: 30px; 
+    position: absolute;
+    color:white;
+  }
+  .fig4{
+    left: 20px;
+    bottom: 50px; 
+    position: absolute;
+    color:white;
+  }
+  #fig_4{
+    left: 20px;
+    bottom: 30px; 
+    position: absolute;
+    color:white;
+  }
+ .player-row{
+   height: 150px;
+ }
+ .container{
+   width: 960px;
+   height: 400px;
+   margin: 0 auto;
+
+ }
+ .images{
+   margin: 0 0;
+   display: inline-block;
+   position: relative;
+   padding: 10px;
+   border: solid thin black;
+   border-radius: 20px;
+   background: white;
+ }
+
+.image2{
+  /* height: 250px;
+  width: 150px; */
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  z-index: 1;
+  border: solid thin white;
+  border-radius: 20px;
+  background: white;
+}
+.image3{
+  /* height: 250px;
+  width: 150px; */
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  z-index: 1;
+  border: solid thin white;
+  border-radius: 20px;
+  background: white;
+}
+.image4{
+  height: 250px;
+  width: 150px;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  z-index: 1;
+  border: solid thin white;
+  border-radius: 20px;
+  background: white;
+}
+/* player vs. player */
+
+.game{
+  height: 350px;
+  background: darkslategray;
+}
+.player1{
+  /* margin-left: 300px;  */
+  margin-top: 20px;
+  display: inline-block;
+  height: 300px;
+  width: 250px;
+  background: white;
+}
+/* button{
+  display: inline-block;
+  
+} */
+.player2{
+  display: inline-block;
+  height: 300px;
+  width: 250px;
+  background: white;
+
+}
+.button{
+  height: 75px;
+  width: 100px;
+  display: inline-block;
+  background:lightgrey;
+  margin-bottom: 120px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+
+}
+h4{
+  padding-top: 30px;
+  
+}
+.field{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.img-contain{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
