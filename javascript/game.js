@@ -18,24 +18,24 @@ var playerHealth2;
      var objects = [
   
       {
-    name: 'Travis',
+    name: 'Tom',
     healthPoints: 150,
     attackPoints: 6,
      },
       {
-    name: 'Ashley',
+    name: 'Jim',
     healthPoints: 200,
-    attackPoints: 20,
+    attackPoints: 8,
       },
       {
-    name: 'zarriah',
+    name: 'Bobby',
     healthPoints: 150,
     attackPoints: 2,
     },
     {
-    name: 'stew',
+    name: 'James',
     healthPoints: 150,
-    attackPoints: 15,
+    attackPoints: 4,
      }
 ];
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
       $('.button').off();
 
   $('.player-div').on('click', function(){
-           pick1 = parseInt($(this).attr('id'));
+          pick1 = parseInt($(this).attr('id'));
           player[i] = objects[pick1];
           i++;
           player1Name = player[0].name;
@@ -92,23 +92,28 @@ $(document).ready(function () {
                 player[1].healthPoints =  player[1].healthPoints - player[0].attackPoints;
                 player[0].attackPoints = player[0].attackPoints *2;
               
-                // $('#fig_1').html(player[0].healthPoints);
+                
                 $(playerHealth).html(player[0].healthPoints);
                 $(playerHealth2).html(player[1].healthPoints);
 
               if(player[0].healthPoints < 0 ){
                   console.log('player 1 lose ');
+                  $('.instructions').html('<h2>You Lose</h2>');
                 }else if(player[1].healthPoints < 0){
                   console.log('player 2 lose');
+                  $('.instructions').html('<h2>You Win, Choose Another Opponent</h2>');
                   var player2 = "#" + pick1;
                   $(player2).remove();
+
                 //if the player loses the next click will be the new oppenent
 
                 $('.player-div').on('click', function(){
+                  $('.instructions').html('<h2>Fight</h2>');
                     pick1 = parseInt($(this).attr('id'));
                     player[1] = objects[pick1];
                     $('.player2').append(this);
                     $('.player-div').off();
+                    
                 });
                 
               }
